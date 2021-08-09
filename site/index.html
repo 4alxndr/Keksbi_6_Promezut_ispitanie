@@ -108,12 +108,87 @@
       <a href="#" class="press-blck-button btn">Читать далее</a>
     </section>
     <section class="assorti">
-      <div class="assorti-table"></div>
+        <table class="assorti-table">
+          <caption>Ассортимент</caption>
+          <thead>
+            <td>Название</td>
+            <td>Алк.</td>
+            <td>Ккал</td>
+            <td>Объём</td>
+            <td>Стоимость</td>
+          </thead>
+          <tr>
+            <th>Классика</th>
+            <td>&lt; 1,2%</td>
+            <td>33</td>
+            <td>330 мл</td>
+            <td>120 Р.</td>
+          </tr>
+          <tr>
+            <th>Шабаш</th>
+            <td>&lt; 1,2%</td>
+            <td>45</td>
+            <td>330 мл</td>
+            <td>250 Р.</td>
+          </tr>
+          <tr>
+            <th>Вахтёр Новинка</th>
+            <td>&lt; 1%</td>
+            <td>35</td>
+            <td>0,5 л</td>
+            <td>150 Р.</td>
+          </tr>
+          <tr>
+            <th>Романтик Новинка</th>
+            <td>&lt; 0,5%</td>
+            <td>27</td>
+            <td>0,5 л</td>
+            <td>90 Р.</td>
+          </tr>      
+        </table>
+      </div>
     </section>
     <section class="order">
       <h2>Заказать</h2>
-      <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
-      <div class="order-forms"></div>
+      <p class="order-text">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+      <div class="order-forms">
+      <form action="#" method="POST">
+        <div class="order-form-group">
+          <label for="fullname">Представьтесь:</label>
+          <input type="text" name="fullname" id="fullname">
+        </div>
+        <div class="order-form-group">
+          <label for="phone">Номер телефона:</label>
+          <input type="text" name="phone" id="phone">
+        </div>
+        <div class="order-form-group">
+          <label for="phone-2">Доп. номер:</label>
+          <input type="text" name="phone-2" id="phone-2">
+        </div>
+        <div class="order-form-group">
+          <label for="Email">Email:</label>
+          <input type="text" name="Email" id="Email">
+        </div>       
+        <div class="order-form-group">
+          <label for="size-order">Объём заказа:</label>          
+          <select name="size-order" id="size-order">
+            <option value="1-5">От 1 до 5 баррелей в неделю</option>
+            <option value="5-10" selected>От 5 до 10 баррелей в неделю</option>
+            <option value="10-15">От 5 до 15 баррелей в неделю</option>
+          </select>
+        </div>
+        <div class="order-form-group">
+          <label for="message">Доп. комментарий:</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="checkbox-area">
+          <label>
+            <input type="checkbox" name="subscription">Я согласен получать квасную рассылку
+          </label>
+        </div>
+        <input class="btn" type="submit" name="order-push">
+      </form>
+      </div>
     </section>
     <footer class="footer">
       <div class="footer-top">
@@ -136,6 +211,8 @@
         </div>
         <div class="footer-bottom__copyright">
           <img src="img/htmlacademy.png" alt="htmlacademy">
+          Разработчик: 
+          <a href="#">HTML Academy</a>          
         </div>       
       </div>
     </footer>
