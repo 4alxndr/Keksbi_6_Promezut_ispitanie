@@ -11,6 +11,11 @@ background-color: white;
 .page-header {
     background-color: #663300;
     color: white;
+    background: url("img/wheat-back.jpg") no-repeat center; */
+    background-image: url("img/wheat-back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .page-header ul {
