@@ -176,7 +176,6 @@ background-color: white;
     font-size: 16px;
     line-height: 20px;
     font-weight: bold;
-    text-transform: uppercase;
     color: #000;
  }
 
@@ -249,4 +248,24 @@ background-color: white;
 .footer-bottom__copyright a {
     color: #999999;
     text-decoration: none;
+}
+
+.feature-self {
+    background: top left url("../img/icon-brew.png") no-repeat;
+}
+
+.feature-our {
+    background: top left url("../img/icon-matreshka.png") no-repeat;
+}
+
+.feature-expensive {
+    background: top left url("../img/icon-thumbsup.png") no-repeat;
+}
+
+.features-item {
+    padding-top: 90px;
+}
+
+.order-form {
+
 }
